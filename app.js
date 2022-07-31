@@ -48,31 +48,31 @@ function getJShand() {
 }
 
 // ユーザの手とJavaScriptのじゃんけんの手を比べる関数
-function winLose(user_hand, js_hand) {
+function winLose(user, js) {
   let winLoseStr;
 
-  if(user_hand == "グー") {
-    if(js_hand == "グー") {
+  if(user == "グー") {
+    if(js == "グー") {
       winLoseStr = "あいこ";
-    } else if(js_hand == "チョキ") {
+    } else if(js == "チョキ") {
       winLoseStr = "勝ち";
-    } else if(js_hand == "パー") {
+    } else if(js == "パー") {
       winLoseStr = "負け";
     }
-  } else if (user_hand == "チョキ") {
-    if(js_hand == "グー") {
+  } else if (user == "チョキ") {
+    if(js == "グー") {
       winLoseStr = "負け";
-    } else if(js_hand == "チョキ") {
+    } else if(js == "チョキ") {
       winLoseStr = "あいこ";
-    } else if(js_hand == "パー") {
+    } else if(js == "パー") {
       winLoseStr = "勝ち";
     }
-  } else if (user_hand == "パー") {
-    if(js_hand == "グー") {
+  } else if (user == "パー") {
+    if(js == "グー") {
       winLoseStr = "勝ち";
-    } else if(js_hand == "チョキ") {
+    } else if(js == "チョキ") {
       winLoseStr = "負け";
-    } else if(js_hand == "パー") {
+    } else if(js == "パー") {
       winLoseStr = "あいこ";
     }
   }
